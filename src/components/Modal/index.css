@@ -1,0 +1,26 @@
+.modal-component .modal-backdrop {
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background-color: rgb(17 24 39 / 55%);
+}
+
+.modal-component .modal {
+  width: min(100%, 32rem);
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.875rem;
+  background-color: #fff;
+  box-shadow: 0 20px 50px rgb(17 24 39 / 25%);
+  color: #1f2937;
+}
+
+.modal-component .modal h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}

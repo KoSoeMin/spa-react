@@ -1,0 +1,90 @@
+.post-form {
+  display: grid;
+  gap: 1.5rem;
+  color: #1f2937;
+}
+
+.post-form h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.post-form .form-control {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.post-form label {
+  color: #374151;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.post-form input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #111827;
+  font: inherit;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.post-form input:focus-visible {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(59 130 246 / 18%);
+}
+
+.post-form button {
+  justify-self: end;
+  min-height: 2.75rem;
+  padding: 0.625rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #2563eb;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.post-form button:hover {
+  background-color: #1d4ed8;
+}
+
+.post-form button:active {
+  transform: translateY(1px);
+}
+
+.post-form button:focus-visible {
+  outline: 3px solid rgb(59 130 246 / 35%);
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .post-form {
+    gap: 1.25rem;
+  }
+
+  .post-form h1 {
+    font-size: 1.35rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-form input,
+  .post-form button {
+    transition: none;
+  }
+}
